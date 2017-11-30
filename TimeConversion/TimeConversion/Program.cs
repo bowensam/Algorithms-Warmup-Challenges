@@ -22,7 +22,7 @@ namespace TimeConversion
             char[] timeArray = s.ToCharArray();
 
             if ((!(p.combineChar(timeArray[0], timeArray[1])).Equals("12")) && (timeArray[8].Equals('P')))
-            { //N.B.: C# use ', not "
+            {
                 String hour = p.combineChar(timeArray[0], timeArray[1]);
                 String adjustedhour = (Convert.ToInt32(hour) + 12).ToString();
 
